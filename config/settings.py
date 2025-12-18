@@ -37,8 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-
-    #apps do projeto
+    # apps do projeto
     "apps.users",
     "apps.services",
     "apps.schedules",
