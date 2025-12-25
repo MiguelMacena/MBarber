@@ -29,12 +29,12 @@ class User(models.Model):
     )  # campo is active
 
     created_at = models.DateTimeField(
-        auto_now=True,
+        auto_now_add=True,
         verbose_name=("Criado em"),
     )  # campo created at
 
     update_at = models.DateTimeField(
-        auto_now=True,
+        auto_now_add=True,
         verbose_name=("Atualizado em"),
     )  # campo update at
 
