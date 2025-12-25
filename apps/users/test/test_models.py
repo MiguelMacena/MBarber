@@ -30,6 +30,7 @@ def test_create_cliente_user():
 
     assert user.type == UserType.CLIENT
 
+
 @pytest.mark.django_db
 def test_user_string_representation():
     # faz o teste que o user está sendo uma string
@@ -41,13 +42,11 @@ def test_user_string_representation():
 
     assert str(user) == "Maria (CLIENT)"
 
+
 @pytest.mark.django_db
 def test_user_default_is_active():
     # faz o teste se o is_active funciona após a criação
     # assegura que o True está sendo passado pelo default
-    user = User.objects.create(
-        name= "Usuario Qualquer",
-        type = UserType.BARBER
-    )
+    user = User.objects.create(name="Usuario Qualquer", type=UserType.BARBER)
 
     assert user.is_active is True
